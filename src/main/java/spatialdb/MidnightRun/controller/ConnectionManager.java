@@ -8,7 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ConnectionManager 
 {
@@ -16,7 +17,7 @@ public class ConnectionManager
 	private String username;
 	private String password;
 	private boolean isConnected = false;
-	private static final Logger logger = Logger.getLogger(ConnectionManager.class);
+	private static final Logger logger = LogManager.getLogger(ConnectionManager.class);
 	private Connection connection = null;
 	
 	public ConnectionManager()

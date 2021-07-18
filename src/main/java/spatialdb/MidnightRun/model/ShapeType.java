@@ -1,6 +1,7 @@
 package spatialdb.MidnightRun.model;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import spatialdb.MidnightRun.view.shapes.Circle;
 import spatialdb.MidnightRun.view.shapes.ComplexLine;
@@ -126,7 +127,7 @@ public enum ShapeType {
 		}
 	};
 	
-	private static final Logger logger = Logger.getLogger(ShapeType.class);
+	private static final Logger logger = LogManager.getLogger(ShapeType.class);
 	public static ShapeType getShapeType(int elmType, int interp)
 	{
 		

@@ -6,14 +6,15 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import spatialdb.MidnightRun.model.SDOShape;
 import spatialdb.MidnightRun.model.ShapeType;
 
 public class DatabaseManager {
 
-	private static Logger logger = Logger.getLogger(DatabaseManager.class);
+	private static Logger logger = LogManager.getLogger(DatabaseManager.class);
 	private ConnectionManager connManager;
 	private String table;
 	private String primaryKey;
